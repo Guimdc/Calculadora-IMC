@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Guilherme Machado Dal Castel">
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <main>
+        <div id="form">
+            <h1>Calculadora de IMC</h1>
+            <div class="form-3" id="nome-div">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" autocomplete="off" type="text" placeholder="Insira o seu Nome" class="inputs">
+            </div>
+            <div id="altura-peso">
+                <div class="form-2">
+                    <label for="altura">Altura (m)</label>
+                    <input id="altura" name="altura" autocomplete="off" type="number" placeholder="Altura (m)" class="inputs" min="0" max="3">
+                </div>
+                <div class="form-2">
+                    <label for="peso">Peso (Kg)</label>
+                    <input id="peso" name="peso" type="number" autocomplete="off" placeholder="Peso (Kg)" class="inputs" min="0" max="500">
+                </div>
+            </div>
+            <button id="button">CALCULAR</button>
+        </div>
+        <div id="table">
+            <table cellspacing="0" id="tabela">
+                <tr>
+                    <th>Nome</th>
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                </tr>
+            </table>
+            <button id="limpar">LIMPAR</button>
+        </div>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
